@@ -12,6 +12,7 @@ https://thangnt336.github.io/Work-Day-Scheduler/
 
 ## Usage
 
+![screenshot](assets/images/screen1.png)
 
 
 
