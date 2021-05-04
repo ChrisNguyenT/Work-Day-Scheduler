@@ -71,11 +71,3 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-.clearBtn {
-  padding: 5px;
-  margin: 10px;
-  position: absolute;
-  margin-left: 20px;
-  top: 20px;
-  border-radius: 10px;
-}

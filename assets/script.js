@@ -51,10 +51,3 @@ $(function() {
     }
     timeTense();
 })
-
-// Clear function to remove all saved text
-$(function() {
-    $('.clearBtn').click(function () {
-        localStorage.clear();
-        location.reload();
-    })});
