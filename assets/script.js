@@ -1,8 +1,14 @@
-// Displays the current date
-var currentDate = moment().format('dddd, MMM Do');
-$('#currentDay').text(currentDate);
-var currentTime = moment().format('h:mm a');
-$('#currentTime').text(currentTime);
+// Displays and updates the current date and time every minute
+function updateTime () {
+    var currentDate = moment().format('dddd, MMM Do');
+    $('#currentDay').html(currentDate);
+    var currentTime = moment().format('h:mm a');
+    $('#currentTime').html(currentTime);
+};                                                                
+updateTime();
+setInterval(function(){
+   updateTime();
+},60000);
 
 // Function to save user input to local storage on click
 $(function() {
