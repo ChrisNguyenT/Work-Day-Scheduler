@@ -1,6 +1,8 @@
 // Displays the current date
 var currentDate = moment().format('dddd, MMM Do');
 $('#currentDay').text(currentDate);
+var currentTime = moment().format('h:mm a');
+$('#currentTime').text(currentTime);
 
 // Function to save user input to local storage on click
 $(function() {
@@ -51,3 +53,10 @@ $(function() {
     }
     timeTense();
 })
+
+// Clear function to remove all saved text
+$(function() {
+    $('.clearBtn').click(function () {
+        localStorage.clear();
+        location.reload();
+    })});
