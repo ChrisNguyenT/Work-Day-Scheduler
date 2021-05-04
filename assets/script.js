@@ -1,0 +1,24 @@
+// Displays the current date
+var currentDate = moment().format('dddd, MMM Do');
+$('#currentDay').text(currentDate);
+
+// Function to save user input to local storage on click
+$(function() {
+    $('.saveBtn').click(function () {
+        var hour = $(this).parent().attr('id');
+        var text = $(this).siblings('.description').val();
+        localStorage.setItem(hour, text);
+    });
+
+    // Returns any user input from local storage 
+    $('#h8 .description').val(localStorage.getItem('h8'));
+    $('#h9 .description').val(localStorage.getItem('h9'));
+    $('#h10 .description').val(localStorage.getItem('h10'));
+    $('#h11 .description').val(localStorage.getItem('h11'));
+    $('#h12 .description').val(localStorage.getItem('h12'));
+    $('#h13 .description').val(localStorage.getItem('h13'));
+    $('#h14 .description').val(localStorage.getItem('h14'));
+    $('#h15 .description').val(localStorage.getItem('h15'));
+    $('#h16 .description').val(localStorage.getItem('h16'));
+    $('#h17 .description').val(localStorage.getItem('h17'));
+})
